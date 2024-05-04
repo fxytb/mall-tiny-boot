@@ -3,6 +3,6 @@ spring:
     nacos:
       config:
         server-addr: localhost:8848
+        file-extension: yml
       discovery:
         server-addr: ${spring.cloud.nacos.config.server-addr}
-

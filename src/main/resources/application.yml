@@ -2,4 +2,14 @@ spring:
   application:
     name: mall-tiny-boot
 server:
-  port: 8080
+  port: 8081
+mybatis:
+  mapper-locations:
+    - classpath:mybatis/*.xml
+    - classpath:mybatis/**/*.xml
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      base-path: /monitor
